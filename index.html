@@ -6,11 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Weather App</title>
       <link rel="stylesheet" href="style.css" />
+      <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     </head>
   </header>
-  <div class="weatherContent">
-    <main>
-      <body>
+  <body>
+    <button class="darkTheme">Dark Theme</button>
+    <div class="weatherContent">
+      <main>
         <h1>
           <div class="searchForm">
             <form>
@@ -19,6 +21,7 @@
                 name=" city"
                 id="currentLocation"
                 placeholder="Type city"
+                required
               />
               <input type="submit" name="search" id="searchButton" />
             </form>
@@ -32,19 +35,19 @@
           <span class="imp"> 566km/h</span>
         </p>
         <div class="temp">🌑1°</div>
-      </body>
-    </main>
-    <hr />
-    <footer>
-      <div>
-        Hosted on<a
-          href="https://github.com/RukaiyaMustafizu/weatherprojectruky "
-          >Github</a
-        >
-        and website hosted on
-        <a href=" https://myfirstweatherappproject.netlify.app/"> Netlify</a>
-      </div>
-    </footer>
-  </div>
-  <script src="js.js"></script>
+      </main>
+      <hr />
+      <footer>
+        <div>
+          Coded by Rukaiya Mustafizu Muhammad Hosted on
+          <a href="https://github.com/RukaiyaMustafizu/weatherprojectruky"
+            >Github</a
+          >
+          and website hosted on
+          <a href="https://myfirstweatherappproject.netlify.app/"> Netlify</a>
+        </div>
+      </footer>
+    </div>
+    <script src="js.js"></script>
+  </body>
 </html>
