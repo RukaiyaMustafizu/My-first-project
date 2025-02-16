@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <h1></h1>
-  <body></body>
-  <footer>
-    <div>
-      Hosted on<a href="https://github.com/RukaiyaMustafizu/weatherprojectruky "
-        >Github</a
-      >
-      and website hosted on
-      <a href=""> Netlify</a>
-    </div>
-  </footer>
+  <header>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Weather App</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+  </header>
+  <div class="weatherContent">
+    <main>
+      <body>
+        <h1>
+          <div class="searchForm">
+            <form>
+              <input
+                type="search"
+                name=" city"
+                id="currentLocation"
+                placeholder="Type city"
+              />
+              <input type="submit" name="search" id="searchButton" />
+            </form>
+          </div>
+        </h1>
+        <hr />
+        <h2 class="city">Tilburg</h2>
+        <p>Sunday 21:02, clear sky</p>
+        <p>
+          Humidity: <span class="imp"> 76%</span>, Wind:
+          <span class="imp"> 566km/h</span>
+        </p>
+        <div class="temp">🌑1°</div>
+      </body>
+    </main>
+    <hr />
+    <footer>
+      <div>
+        Hosted on<a
+          href="https://github.com/RukaiyaMustafizu/weatherprojectruky "
+          >Github</a
+        >
+        and website hosted on
+        <a href=" https://myfirstweatherappproject.netlify.app/"> Netlify</a>
+      </div>
+    </footer>
+  </div>
   <script src="js.js"></script>
 </html>
