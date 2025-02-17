@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <button class="darkTheme">Dark Theme</button>
@@ -25,13 +25,13 @@
           </form>
         </div>
         <hr />
-        <h2 class="city">Tilburg</h2>
-        <p class="weather-time">Sunday 21:02, clear sky</p>
+        <p id="city" class="city">Tilburg</p>
+        <p id="time" class="weather-time">Sunday 21:02, clear sky</p>
         <p>
-          Humidity: <span class="imp humidity">76%</span>, Wind:
-          <span class="imp wind-speed">566km/h</span>
+          Humidity: <span id="humidity" class="imp humidity">76%</span>, Wind:
+          <span id="wind-speed" class="imp wind-speed">566km/h</span>
         </p>
-        <div class="temp">🌑1°</div>
+        <div id="temperature" class="temp">🌑1°</div>
         <div id="icon"></div>
       </main>
       <div class="weather-forecast" id="forecast"></div>
