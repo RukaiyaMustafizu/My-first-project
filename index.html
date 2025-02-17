@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <header>
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Weather App</title>
-      <link rel="stylesheet" href="style.css" />
-      <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
-    </head>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
   <body>
     <button class="darkTheme">Dark Theme</button>
+
     <div class="weatherContent">
       <main>
-        <h1>
-          <div class="searchForm">
-            <form>
-              <input
-                type="search"
-                name=" city"
-                id="currentLocation"
-                placeholder="Type city"
-                required
-              />
-              <input type="submit" name="search" id="searchButton" />
-            </form>
-          </div>
-        </h1>
+        <div class="searchForm">
+          <form>
+            <input
+              type="search"
+              name="city"
+              id="currentLocation"
+              placeholder="Type city"
+              required
+            />
+            <input type="submit" name="search" id="searchButton" />
+          </form>
+        </div>
         <hr />
         <h2 class="city">Tilburg</h2>
         <p class="weather-time">Sunday 21:02, clear sky</p>
@@ -37,18 +34,41 @@
         <div class="temp">🌑1°</div>
         <div id="icon"></div>
       </main>
+
+      <!-- Weather Forecast Section -->
+      <div class="weather-forecast">
+        <div class="weather-forecast-day">
+          <div class="weather-forecast-date">Tue</div>
+          <div class="weather-forecast-icon">🌧️</div>
+          <div class="weather-forecast-temperatures">
+            <div class="weather-forecast-temperature"><strong>15°</strong></div>
+            <div class="weather-forecast-temperature">9°</div>
+          </div>
+        </div>
+
+        <div class="weather-forecast-day">
+          <div class="weather-forecast-date">Wed</div>
+          <div class="weather-forecast-icon">☀️</div>
+          <div class="weather-forecast-temperatures">
+            <div class="weather-forecast-temperature"><strong>18°</strong></div>
+            <div class="weather-forecast-temperature">12°</div>
+          </div>
+        </div>
+      </div>
+
       <hr />
       <footer>
         <div>
-          Coded by Rukaiya Mustafizu Muhammad Hosted on
+          Coded by Rukaiya Mustafizu Muhammad. Hosted on
           <a href="https://github.com/RukaiyaMustafizu/weatherprojectruky"
             >Github</a
           >
           and website hosted on
-          <a href="https://myfirstweatherappproject.netlify.app/"> Netlify</a>
+          <a href="https://myfirstweatherappproject.netlify.app/">Netlify</a>
         </div>
       </footer>
     </div>
+
     <script src="js.js"></script>
   </body>
 </html>

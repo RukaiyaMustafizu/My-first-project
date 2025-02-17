@@ -174,3 +174,27 @@ footer a:hover {
 .dark a {
   color: bisque;
 }
+.weather-forecast {
+  display: flex;
+}
+.weather-forecast-date {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(132, 50, 208);
+  margin-bottom: 5px;
+}
+.weather-forecast-icon {
+  text-align: center;
+  font-size: 38px;
+}
+.weather-forecast-temperatures {
+  text-align: center;
+  color: rgb(133, 35, 123);
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.weather-forecast-temperature {
+  padding: 10px;
+}
