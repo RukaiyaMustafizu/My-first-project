@@ -89,14 +89,33 @@ function searchOnGoogle() {
   }
 }
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">${day}</div>
+        <div class="weather-forecast-icon">🌤️</div>
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong>15º</strong>
+          </div>
+          <div class="weather-forecast-temperature">9º</div>
+        </div>
+      </div>
+    `;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 // Add event listener to the search form
 let searchFormElement = document.querySelector(".searchForm form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 // Default city search on page load
 searchCity("Tilburg");
-
-// Add event listener to the "Search on Google" button
-document
-  .querySelector("#googleSearchButton")
-  .addEventListener("click", searchOnGoogle);
