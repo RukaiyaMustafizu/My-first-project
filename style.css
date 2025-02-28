@@ -196,3 +196,12 @@ footer a:hover {
 .weather-forecast-temperature {
   padding: 10px;
 }
+
+.searchInput::placeholder {
+  color: rgba(0, 0, 0, 0.7); /* Adjust the color and opacity as needed */
+}
+
+/* Darker placeholder text */
+::placeholder {
+  color: rgba(0, 0, 0, 0.828); /* Adjust the color and opacity as needed */
+}
